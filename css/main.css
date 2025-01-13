@@ -127,7 +127,8 @@ img {
     display: block;
     border-radius: 50%;
     position: relative;
-    left: 20px;
+    left: 24px;
+    top: 6px;
     width: 20px;
     height: 20px;
     font-size: 10px;
@@ -156,7 +157,11 @@ img {
     z-index: 1;
 }
 
-
+.wrapper {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+}
 
 /* ADVANTAGES */
 .advantages {
@@ -225,6 +230,8 @@ img {
 
  .block-1 .advantages-list-title{
     color: #ffffff;
+    margin: 0;
+    padding-bottom: 30px;
  }
 
 .advantages-list-title {
@@ -233,6 +240,16 @@ img {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+}
+
+.advantages-list-titl::before {
+    content: "";
+    width: 250px;
+    height: 21px;
+    display: block;
+    background-image: url(./../img/icons/food.svg);
+    background-repeat: no-repeat;
+    color: red;
 }
 
 .advantages-description .advantages-title {
@@ -321,6 +338,7 @@ img {
     width: 1056px;
     margin: 0 auto;
     justify-content: space-between;
+    align-items: center;
 }
 .fotter-social-list {
     width: 200px;
@@ -331,13 +349,37 @@ img {
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-item {
-    width: 18px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     margin-right: 30px;
     margin-bottom: 30px;
+}
+
+.footer-link {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 44px;
+}
+
+.footer-link-tw {
+    background-image: url(./../img/icons/twitter.svg);
+    background-size: 18px 15px;
+}
+
+.footer-link-fb {
+    background-image: url(./../img/icons/fasebook.svg);
+    background-size: 10px 18px;
+}
+
+.footer-link-youtube {
+    background-image: url(./../img/icons/youtube.svg);
+    background-size: 20px 16px;
 }
 
 .footer-item:nth-child(3n) {
