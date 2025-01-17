@@ -581,8 +581,9 @@ img {
     height: 48px;
    display:block;
 }
-.card-grid-toggle-current {
+.display-item-current {
     border: 2px solid #000000;
+    border-radius: 4px;
 }
 .card-grid-toggle svg {
     position: absolute;
